@@ -9,7 +9,6 @@ class NeuralNetwork:
 
     def predict(self, a):
         for w ,b in zip(self.weights,self.biases):
-            z =  np.matmul(w,a) + b
             a = self.activation(np.matmul(w,a) + b)
         return a
 
