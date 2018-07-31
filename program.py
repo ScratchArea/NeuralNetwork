@@ -11,4 +11,3 @@ layer_sizes = (784,5,10)
 
 net = nn.NeuralNetwork(layer_sizes)
 net.print_accuracy(training_images,training_labels)
-
